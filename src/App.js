@@ -5,7 +5,7 @@ import "./style.css";
 class Control extends Component {
     render() {
         return (
-            <div>
+            <div style={{ textAlign: "center" }}>
                 <input
                     type="button"
                     value="재도전?"
@@ -74,7 +74,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.state.myCount}
+                <p style={{ textAlign: "center" }}>
+                    남은 기회 : {this.state.myCount}
+                </p>
 
                 <div className="inner">
                     <ul>
@@ -134,6 +136,10 @@ class App extends Component {
                 </div>
 
                 {this.state.open && <Control onClick={this.reSet} />}
+
+                {!!this.state.win.length && (
+                    <div>당첨 내역 : {JSON.stringify(this.state.win)}</div>
+                )}
             </div>
         );
     }

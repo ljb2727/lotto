@@ -97,7 +97,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.state.myCount}
+                <p style={{ textAlign: "center" }}>
+                    남은 기회 : {this.state.myCount}
+                </p>
                 <Card
                     cardClick={this.cardClick}
                     rest={this.state.rest}
