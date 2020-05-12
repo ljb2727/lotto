@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.App .inner>ul {
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.App .inner>ul>li {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    margin: 2vw 0
+}
+
+.App .inner>ul>li .inner {
+    background-image: url("https://image.xgolf.com/file/2020/0428/2020042816200760064.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    width: 21.38vw;
+    height: 33.47vw;
+    background-size: contain;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+
+.App .inner>ul>li .inner.open.gift01 {
+    background-image: url("https://image.xgolf.com/file/2020/0507/20200507110239572060.png")
+}
+
+.App .inner>ul>li .inner.open.gift02 {
+    background-image: url("https://image.xgolf.com/file/2020/0507/20200507110239843001.png")
+}
+
+.App .inner>ul>li .inner.open.gift03 {
+    background-image: url("https://image.xgolf.com/file/2020/0507/20200507110239959072.png")
+}
+
+.App .inner>ul>li .inner.open.gift04 {
+    background-image: url("https://image.xgolf.com/file/2020/0428/20200428173727527071.png")
+}
+
+.App .inner>ul>li .inner.open.gift05 {
+    background-image: url("https://image.xgolf.com/file/2020/0428/20200428173727361050.png")
+}
+
+.App .inner>ul>li .inner.open.gift06 {
+    background-image: url("https://image.xgolf.com/file/2020/0428/20200428173727911014.png")
+}
+
+.App .inner>ul>li .inner.target {
+    background-color: red;
+}
